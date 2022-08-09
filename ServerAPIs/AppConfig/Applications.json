@@ -1,0 +1,43 @@
+{
+  "Applications": {
+    "PEAT": {
+      "CloudTransactions": {
+        "SQLCA": {
+          "CacheName": "PEAT"
+        }
+      },
+      "Transaction": {
+        "Timeout": 120,
+        "TransactionException": true
+      },
+      "Session": {
+        "Timeout": 3600
+      },
+      "Request": {
+        "Timeout": 3600
+      },
+      "RunMode": 0
+    }
+  },
+  "Connections": {
+    "Default": {
+      "PEAT": {
+        "ConnectionType": "SqlServer",
+        "Database": "PEAT",
+        "Host": "172.16.0.154",
+        "Port": 1433,
+        "UserID": "dba",
+        "Password": "eyJQYXlsb2FkIjoiRzE1bWJDc25oS1hXcHdXS2VoMmowUT09IiwiVGltZXN0YW1wIjoxNjYwMDAwMzcxLCJTaWduYXR1cmUiOiJXUGllNFVqV3ROSTNjZXhZVml5RnlKSUxXQlExUmI3bVNuY2djMFN3XHUwMDJCaFpRajdcdTAwMkJZT1lLaUlcdTAwMkJWUkg1N1dTZVBUNGw3TWRuRjBJZ1ViNkdMOXVhXHUwMDJCazZ3PT0ifQ==",
+        "EnablePooling": true,
+        "MinPoolSize": 0,
+        "MaxPoolSize": 100,
+        "ConnectionLifetime": 0,
+        "ConnectionTimeout": 15,
+        "CommandTimeout": 30,
+        "SecurityOptions": "Encrypt=False",
+        "OtherOptions": null,
+        "DynamicConnection": false
+      }
+    }
+  }
+}
